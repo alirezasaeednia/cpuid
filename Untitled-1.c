@@ -34,9 +34,6 @@ int main()
 __asm__("mov $0x2, %eax\n\t");
 __asm__("cpuid\n\t");
 __asm__("mov %%eax, %0\n\t":"=r" (a));
-//__asm__("mov %%edx, %0\n\t":"=r" (a));
-//__asm__("mov %%ecx, %0\n\t":"=r" (a));
-//__asm__("mov %%eax, %0\n\t":"=r" (a));
 
 printf ("%0x\n", a);
 }
